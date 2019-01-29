@@ -1,11 +1,11 @@
 {
   "name": "express-body-params",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Node express body params decorator",
   "main": "index.js",
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"build": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
