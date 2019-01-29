@@ -39,7 +39,7 @@ import { Params, ParamTypes } from 'express-body-params';
     { name: "password", type: ParamTypes.string, required: true }
 ])
 async login(req: any, res: any): Promise<void> {
-    if (req.validBody()) {
+    if (req.validBody) {
         ...
     } else { 
         const errors: ParamError[] = req.bodyErrors;
