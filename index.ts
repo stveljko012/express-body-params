@@ -93,7 +93,7 @@ const _patternHandler = (param: any, paramConfig: IParamConfig, errors: ParamErr
     }
 };
 
-export function Params(params: IParamConfig[]) {
+export function Params(handleInside: boolean, params: IParamConfig[]) {
     return function(target: Object, propertyKey: string, descriptor: TypedPropertyDescriptor<any>) {
         const originalMethod = descriptor.value;
 
@@ -126,12 +126,16 @@ export function Params(params: IParamConfig[]) {
                 }
             }
 
-            if (errors.length > 0) {
+            if (errors.length > 0 && handleInside) {
                 res.status(400).send({
                     errors: errors
                 });
                 return false
-            }
+			}
+			
+			req.validBody = errors.length === 0 ? true : false;
+			req.bodyErrors = errors;
+
             return originalMethod.apply(this, args);
         };
 
