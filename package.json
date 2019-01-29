@@ -18,7 +18,7 @@
     "decorator"
   ],
   "author": "Veljko Stanojevic <stveljko012@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/stveljko012/express-body-params/issues"
   },
