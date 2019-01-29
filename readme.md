@@ -7,7 +7,7 @@ express-body-params is decorator for handler functions to validate body before f
 Use the package manager [npm](https://www.npmjs.com/package/express-body-params) to install foobar.
 
 ```bash
-npm  i express-body-params
+npm i express-body-params
 ```
 
 ## Usage
