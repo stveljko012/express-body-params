@@ -14,7 +14,7 @@ npm i express-body-params
 #### Skip method call if body is not valid and send status 400 with errors:
 
 ```typescript
-import { Params, ParamTypes, ParamError } from 'express-body-params';
+import { Params, ParamTypes } from 'express-body-params';
 
 
 // SET THIS PARAMETER TO TRUE
@@ -30,7 +30,7 @@ async login(req: any, res: any): Promise<void> {
 #### Call method call if body is not valid and pass errors to it:
 
 ```typescript
-import { Params, ParamTypes } from 'express-body-params';
+import { Params, ParamTypes, ParamError } from 'express-body-params';
 
 
 // SET THIS PARAMETER TO FALSE
