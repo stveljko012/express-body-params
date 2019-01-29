@@ -1,0 +1,29 @@
+{
+  "name": "express-body-params",
+  "version": "1.0.0",
+  "description": "Node express body params decorator",
+  "main": "index.js",
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stveljko012/express-body-params.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "params",
+    "decorator"
+  ],
+  "author": "Veljko Stanojevic <stveljko012@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stveljko012/express-body-params/issues"
+  },
+  "homepage": "https://github.com/stveljko012/express-body-params#readme",
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}
