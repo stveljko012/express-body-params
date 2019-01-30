@@ -4,7 +4,7 @@ express-body-params is decorator for handler functions to validate body before f
 
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com) to install foobar.
+Use the package manager [npm](https://www.npmjs.com) to install express-body-params decorator.
 
 ```bash
 npm i express-body-params
@@ -47,13 +47,18 @@ async login(req: any, res: any): Promise<void> {
     }
 }
 ```
+## Optional checks
+
+- __required__ - Checks if param exists.
+- __pattern__ - Checks if param match the passed pattern.
+- __min__/__max__- Checks length of string if string type is setted or compare numbers for type number.
 
 ## Parameters
 
-| Parameter        | Type           |
-|:----------------:|:--------------:| 
-| handleInside     | Boolean        |
-| params           | IParamConfig[] |
+| Parameter       | Type          |
+|:----------------|:--------------| 
+| handleInside    | Boolean       |
+| params          | IParamConfig[]|
 
 ## Types
 #### IParamConfig
@@ -92,6 +97,8 @@ export declare enum ParamTypes {
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+Please star me on github.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
